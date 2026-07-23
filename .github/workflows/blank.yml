@@ -1,12 +1,11 @@
 name: Git Workflow
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: hello
+      - name: Build Step
         run: |
-          echo "this is line 1"
-          echo "this is line 1"
+          echo "A demo build"
       
       
