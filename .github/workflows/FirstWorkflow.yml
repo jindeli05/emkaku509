@@ -1,10 +1,16 @@
 name: First Workflow
-on: [push, pull_request]
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
         run: echo "My first build"
-      
-    
