@@ -8,10 +8,10 @@ on:
   pull_request:
     branches:
       - main
-      - feature/**
+      - feature/pr-demo
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
-        run: echo "My first build"
+        run: echo "we are testing build"
