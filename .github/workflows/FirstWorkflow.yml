@@ -5,18 +5,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
-        run: echo "first build"
-  test:
-    runs-on: ubuntu-22.04
-    needs: build
-    steps:
-      - name: Test Phase
-        run : echo "run test cases"
-  Deploy:
-    runs-on: ubuntu-22.04
-    needs: test
-    steps:
-      - name: deploy to prod
-        run :  echo "deploying to productions"
+        run: echo "My first build"
       
     
