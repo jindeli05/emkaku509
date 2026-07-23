@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
-        run: echo"first build"
+        run: echo "first build"
   test:
     runs-on: ubuntu-22.04
     steps:
