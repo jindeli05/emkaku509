@@ -1,17 +1,12 @@
 name: First Workflow
-on: 
-  push:
-    branches:
-      - main
-      - master
-      - develop
-      - 'release/**'
-  pull_request:
-    branches:
-      - main
+on: push
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - name: Build phase
-        run: echo " My name is ${{secrets.MY_NAME}}"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name : Print something
+        run: echo "Hello, World!"
+  
+
