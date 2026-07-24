@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
-        run: echo " My name is ${{vars.MY_NAME}}"
+        run: echo " My name is ${{secrets.MY_NAME}}"
