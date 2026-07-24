@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build phase
-        run: echo "we are testing build"
+        run: echo "we are testing build ${{vars.MY_NAME}}"
